@@ -1,0 +1,596 @@
+/* Universal Style */
+html {
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+ background-image: url("https://cronoscorgiclub.mypinata.cloud/ipfs/QmZZ1LZdVm5WLbhCay3mkYgRYryAtUj7jfmwjFiqNFUbwK/background.jpg");
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+
+
+}
+main {
+    position: relative;
+    top: 10.03125rem;
+}
+.tokenomics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10.03125rem;
+}
+.roadmap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10.03125rem;
+}
+
+/*Header Style */
+header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;  
+    border: 2px solid rgba(25, 26, 29, 0.9);
+    background-color: rgba(25, 26, 29, 0.75);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    padding: 1.875rem;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+}
+.logo-name img {
+    width: 5rem;
+    border-radius: 100%;
+    margin-right: 1rem;
+}
+
+.logo-name h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.navigation {
+    align-items: center;
+    flex: 1;
+    padding: 2rem;
+}
+
+.navigation ul {
+    display: flex;
+}
+
+.navigation ul li {
+    padding-left: 3rem;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-size: 2rem;
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 1rem;
+    color:white;
+    cursor: pointer;
+}
+
+.navigation a:hover {
+    border: 2px solid white;
+}
+
+.navigation a:active {
+    background-color:white;
+    color:black;
+}
+.social-link {
+    display: flex;
+    align-items: center;
+}
+
+.social-link img {
+    width: 4rem;
+    border-radius: 100%;
+}
+
+/* Footer Style */
+
+footer {
+    width: 100%;
+    border: 2px solid rgba(25, 26, 29, 0.9);
+    background-color: rgba(25, 26, 29, 0.75);
+    position: absolute;
+    bottom: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer h1{
+    padding: 1.875rem;
+    font-size: 2rem;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    padding: 1.875rem;
+}
+
+.footer-link img {
+    width: 4rem;
+    padding: 1rem;
+}
+@media only screen and (max-width: 1200px) {
+    header .container {
+        padding: 0.5rem;
+    }
+    .logo-name img {
+        width:2.5rem;
+    }
+    .logo-name h3 {
+        font-size: 0rem;
+        visibility: hidden;
+    }
+    .navigation {
+        padding: 0.5rem;
+    }
+    .navigation ul li {
+        padding-left: 0.5rem;
+    }
+    .navigation a {
+        font-size: 1.5rem;
+        padding: 0.25rem;
+    }
+    .social-link img {
+        width: 3rem;
+    }
+
+    main, .tokenomics, .roadmap {
+        position: relative;
+        top: 4.5rem;
+    }
+    footer h1{
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+    .footer-link {
+        padding: 0.5rem;
+    }
+    .footer-link img {
+        width: 3rem;
+        padding: 0.875rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .navigation a {
+        font-size: 1rem;
+    }
+    .social-link img {
+        width: 2rem;
+    }
+    main, .tokenomics, .roadmap {
+        position: relative;
+        top: 3.875rem;
+    }
+    footer h1 {
+        font-size: 1rem;
+    }
+    .footer-link img {
+        width: 2rem;
+        padding: 0.25rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header .container {
+        padding: 0.25rem;
+    }
+    .logo-name img {
+        width:2rem;
+    }
+    .navigation ul li {
+        padding-left: 0.25rem;
+    }
+.navigation a {
+    font-size: 0.75rem;
+    }
+.social-link img {
+    width: 1.5rem;
+    }
+    main, .tokenomics, .roadmap {
+        position: relative;
+        top: 2.8rem;
+    }
+    footer h1 {
+        font-size: 0.75rem;
+    }
+    .footer-link img {
+        width: 1.5rem;
+        padding: 0.1rem;
+    }
+}
+
+
+@media only screen and (max-width: 300px) {
+    .logo-name img {
+        width:1.5rem;
+    }
+    .navigation ul li {
+        padding-left: 0.125rem;
+    }
+    .navigation a {
+        font-size: 0.5rem;
+    }
+    .social-link img {
+        width: 1.25rem;
+    }
+    footer h1 {
+        font-size: 0.5rem;
+    }
+    .footer-link img {
+        width: 1.25rem;
+    }
+}
+ /*Main website contents*/
+.top-page {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     color: bisque;
+}
+
+.info-board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.title {
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title h1 {
+    font-size: 3rem;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px dashed bisque;
+    border-radius: 0 1.875rem;
+    font-weight: 700;
+}
+
+.top-button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-button a{
+    text-decoration: none;
+    color: bisque;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    border: 1px solid bisque;
+    background-color: rgba(25, 25, 112, 0.5);
+    border-radius: 2rem;
+    padding:1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.top-button a:hover {
+    border: 2px solid bisque;
+}
+
+.top-button a:active {
+    border: 2px solid rgba(25, 25, 112, 0.5);
+    color: rgba(25, 25, 112, 0.5);
+    background-color: bisque;
+}
+.banner {
+    width: 37.5rem;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("https://cronoscorgiclub.mypinata.cloud/ipfs/QmZZ1LZdVm5WLbhCay3mkYgRYryAtUj7jfmwjFiqNFUbwK/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2rem;
+}
+
+.banner a{
+    text-decoration: none;
+    color: bisque;
+    font-size: 1rem;
+    border: 1px solid bisque;
+    background-color: rgba(25, 25, 112, 0.5);
+    padding: 1rem;
+    border-radius: 2rem;
+    visibility: hidden;
+}
+
+.banner a:hover {
+    border: 2px solid bisque;
+}
+
+.banner a:active {
+    border: 2px solid rgba(25, 25, 112, 0.5);
+    color: rgba(25, 25, 112, 0.5);
+    background-color: bisque;
+}
+
+.introduction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.slogan {
+    display: flex;
+    padding: 2rem;
+}
+.slogan h3{
+    font-size: 2rem;
+    text-align: center;
+    border: 1px dashed bisque;
+    padding: 1rem;
+    border-radius: 0 2rem;
+}
+
+.info {
+    display: flex;
+}
+
+.info p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Tokenomics */
+
+.token {
+    width: 37.5rem;
+    height: 35rem;
+    color: white;
+    opacity: 0.75;
+    display: grid;
+    grid-template: repeat(4, 1fr) / 1fr 2fr;
+    row-gap: 1rem;
+    background-image: url("https://cronoscorgiclub.mypinata.cloud/ipfs/QmZZ1LZdVm5WLbhCay3mkYgRYryAtUj7jfmwjFiqNFUbwK/tokenomics.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2rem;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.token h1 {
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 2.5rem;
+    border: 1px dashed bisque;
+    border-radius: 0 2rem;
+    align-self: center;
+    justify-self: center;
+    padding: 1rem;
+}
+
+.token p {
+    border-bottom: 2px solid bisque;
+    border-bottom-right-radius: 2rem;
+}
+.liquidity {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.marketing {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.reflection {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.tokenomics-button a {
+    display: block;
+    text-decoration: none;
+    color: bisque;
+    font-size: 1rem;
+    border: 1px solid bisque;
+    background-color: rgba(25, 25, 112, 0.5);
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 0.25rem;
+    }
+.tokenomics-button a:hover {
+        border: 2px solid bisque;
+    }
+    
+.tokenomics-button a:active {
+        border: 2px solid rgba(25, 25, 112, 0.5);
+        color: rgba(25, 25, 112, 0.5);
+        background-color: bisque;
+    }
+
+.rmap {
+    width: 37.5rem;
+    height: 35rem;
+    color: white;
+    opacity: 0.75;
+    display:grid;
+    grid-template: 1fr 1fr / 1.25fr 1fr 1fr;
+    background-image: url("https://cronoscorgiclub.mypinata.cloud/ipfs/QmZZ1LZdVm5WLbhCay3mkYgRYryAtUj7jfmwjFiqNFUbwK/roadmap.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.rmap p {
+    grid-area: 2 / 2 / 3 / 4;
+    align-self: center;
+    justify-self: center;
+    padding: 1rem;
+    border: 1px dashed blue;
+    border-radius: 2rem;
+}
+@media only screen and (max-width: 1200px) {
+    .title h1 {
+        font-size: 1.5rem;
+    }
+    .top-button a{
+       font-size: 0.5rem;
+    }
+    .slogan h3 {
+        font-size: 1rem;
+    }
+    .info p {
+        font-size: 1rem;
+    }
+    .token {
+        width: 35rem;
+        height: 32.5rem;
+        font-size: 1.75rem;
+        }
+    .token h1 {
+        font-size: 2rem;
+    }
+    .rmap {
+        width: 35rem;
+        height: 32.5rem;
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .top-page {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .banner a, .tokenomics-button a {
+        visibility: visible;
+        font-size: 1rem; 
+    }
+    .info-board {
+        position: absolute;
+        visibility: hidden;
+    }
+    .banner {
+        width: 32.5rem;
+        height: 20rem;
+    }
+    .info {
+        margin: 0 1rem;
+    }
+    .token {
+        width: 32.5rem;
+        height: 30rem;
+        font-size: 1.5rem;
+        }
+    .token h1 {
+        font-size: 1.75rem;
+    }
+    .rmap {
+        width: 32.5rem;
+        height: 30rem;
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .banner {
+        width: 22.5rem;
+        height: 15rem;
+    }
+    .banner a, .tokenomics-button a{
+        font-size: 0.75rem; 
+    }
+    .token {
+        width: 22.5rem;
+        height: 20rem;
+        font-size: 1rem;
+        }
+    .token h1 {
+        font-size: 1.25rem;
+    }
+    .tokenomics-button {
+        width:100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .rmap {
+        width: 22.5rem;
+        height: 22.5rem;
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .banner {
+        width: 17.5rem;
+        height: 12.5rem;
+    }
+    .banner a, .tokenomics-button a{
+        font-size: 0.5rem; 
+    }
+    .token {
+        width: 20rem;
+        height: 17.5rem;
+        font-size: 0.75rem;
+        padding: 0.5rem;
+        }
+    .token h1 {
+        font-size: 1rem;
+    }
+    .rmap {
+        width: 17rem;
+        height: 17rem;
+        font-size: 0.65rem;
+    }
+    .rmap p {
+        border:0;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .banner {
+        width: 14rem;
+        height: 10rem;
+    }
+    .banner a, .tokenomics-button a{
+        font-size: 0.5rem; 
+    }
+    .rmap {
+        width: 15rem;
+        height: 15rem;
+        font-size: 0.55rem;
+    }
+    
+}
